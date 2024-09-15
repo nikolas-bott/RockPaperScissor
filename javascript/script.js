@@ -36,7 +36,7 @@ function getHumanChoice(){
             case "3":
                 return paper;
         }
-        alert("You have to input a number between 1 and 3.");
+        alert("You have to input a number between 1 and 3. or one of these strings: rock, paper, scissors");
         return getHumanChoice();
 }
 
@@ -46,9 +46,7 @@ function playRound(){
     const humanChoice = getHumanChoice();
     const computerChoice = getComputerChoice();
 
-    console.log(humanChoice);
-    console.log(computerChoice);
-
+    console.log("----- next_round -----");
     if(humanChoice == computerChoice){
         console.log("Draw. - There's no winner!");
         return("none");
@@ -80,7 +78,6 @@ function playRound(){
                 return("human");
         }
     }
-
 }
 
 //console.log(playRound());
