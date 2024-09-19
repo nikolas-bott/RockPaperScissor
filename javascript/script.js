@@ -67,7 +67,7 @@ function playRound(){
     console.log("----- next_round -----");
     if(humanChoice == computerChoice){
         console.log("Draw. - There's no winner!");
-        message.textContent = "Draw. - There's no winner!";
+        message.textContent = "Draw.";
         displayComputerChoice.textContent = "The computer choose: "+humanChoice;
         
         return("none");
@@ -75,16 +75,16 @@ function playRound(){
         switch(computerChoice){
             case rock: 
                 console.log("You lose! Rock beats Scissors!");
-                message.textContent = "You lose! Rock beats Scissors!";
+                message.textContent = "You lose!";
                 computerScore++;
                 scoreC.textContent = "Computer Score: "+computerScore;
                 displayComputerChoice.textContent = "The computer choose: Rock";
                 return("computer");
             case paper: 
                 console.log("You won! Scissors bets Paper!");
-                message.textContent = "You won! Scissors bets Paper!";
+                message.textContent = "You won!";
                 humanScore++;
-                scoreH.textContent = "Your score: " + humanScore;
+                scoreH.textContent = "Score of Player: " + humanScore;
                 displayComputerChoice.textContent = "The computer choose: Paper";
                 return("human");
         }
@@ -92,14 +92,14 @@ function playRound(){
         switch(computerChoice){
             case rock: 
                 console.log("You won! Paper beats rock!");
-                message.textContent = "You won! Paper beats rock!";
+                message.textContent = "You won!";
                 humanScore++;
-                scoreH.textContent = "Your score: " +humanScore;
+                scoreH.textContent = "Score of Player: " +humanScore;
                 displayComputerChoice.textContent = "The computer choose: Rock";
                 return("human");
             case scissors:
                 console.log("You lose! Scissors beats Paper!");
-                message.textContent = "You lose! Scissors beats Paper!";
+                message.textContent = "You lose!";
                 computerScore++;
                 scoreC.textContent = "Computer Score: "+computerScore;
                 displayComputerChoice.textContent = "The computer choose: Scissors";
@@ -109,16 +109,16 @@ function playRound(){
         switch(computerChoice){
             case paper:
                 console.log("You loose! Paper beats rock!");
-                message.textContent = "You loose! Paper beats rock!";
+                message.textContent = "You loose!";
                 computerScore++;
                 scoreC.textContent = "Computer Score: "+computerScore;
                 displayComputerChoice.textContent = "The computer choose: Paper";
                 return("computer");
             case scissors: 
                 console.log("You won! Rock beats scissors!");
-                message.textContent = "You won! Rock beats scissors!";
+                message.textContent = "You won!";
                 humanScore++;
-                scoreH.textContent = "Your score: " +humanScore;
+                scoreH.textContent = "Score of Player: " +humanScore;
                 displayComputerChoice.textContent = "The computer choose: Scissors";
                 return("human");
         }

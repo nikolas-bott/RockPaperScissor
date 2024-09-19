@@ -4,19 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="./javascript/script.js" defer></script>
+    <link href="./css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <button class="button" id="rock">Rock</button>
-    <button class="button" id="paper">Paper</button>
-    <button class="button" id="scissors">Scissors</button>
-
-    <div class="results">
-        <p id="message">Click a button to start the match!</p>
-        <p id="human-score">Your score: 0</p>
-        <p id="computer-choice"></p>
-        <p id="computer-score">Computer Score: 0</p>
+    <div class="container">
+        <div class="header">
+            <h1>Rock Paper Scissors</h1>
+        </div>
+        <div class="button-container">
+            <button class="button" id="rock">Rock</button>
+            <button class="button" id="paper">Paper</button>
+            <button class="button" id="scissors">Scissors</button>
+        </div>
+        <div class="results">
+            <p id="message">...</p>
+            <div class="score">
+                <p id="human-score">Score of Player: 0</p>
+                <p>&nbsp&nbsp|&nbsp&nbsp</p>
+                <p id="computer-score">Computer score: 0</p>
+            </div>
+            <p id="computer-choice">The Computer choose: -</p>
+            
+        </div>
     </div>
-
-    <script src="./javascript/script.js"></script>
+<div class="footer">by nikolas-bott</div>
 </body>
 </html>
